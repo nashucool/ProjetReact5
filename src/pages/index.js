@@ -4,6 +4,8 @@ import InfoSection from '../components/InfoSection';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import { homeObjOne, homeObjTwo, homeObjThree} from '../components/InfoSection/Data';
+import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const[isOpen, setIsOpen] = useState(false); // const qui donne un etat estOuvert false
@@ -18,6 +20,9 @@ const Home = () => {
     <HeroSection/>
     <InfoSection {...homeObjOne}/>
     <InfoSection {...homeObjTwo}/>
+    <Services/>
+    <InfoSection {...homeObjThree}/>
+    <Footer/>
     </>
   )
 }

@@ -3,10 +3,9 @@ import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
-    /*background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};*/
-    background: #000;
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
-    /*margin-top: -80px;/*sert a mettre le hero section sous le nav*/
+    margin-top: -80px;/*sert a mettre le hero section sous le nav*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +92,7 @@ export const NavLinks = styled(LinkS)`
 
     &.active {
        /*border-bottom: 3px solid #01bf71; */
-       color: #01bf71; 
+       color: #F163FF;
     }
     
 `
@@ -108,7 +107,7 @@ export const NavBtn = styled.nav`
     
 `
 
-export const NavBtnLink = styled.nav`
+export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: #F163FF;
     white-space: nowrap;
